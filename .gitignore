@@ -3,6 +3,8 @@ archive
 removed
 .env
 z*.sh
+*.sqlite
+*.tar.gz
 localhost
 
 # Various IDEs and Editors
