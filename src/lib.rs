@@ -1,4 +1,5 @@
 #![allow(dead_code)]
+#[allow(unused_imports)]
 /*#![deny(clippy::all)]
 #![allow(clippy::collapsible_if)]
 #![allow(clippy::collapsible_else_if)]
