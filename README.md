@@ -3,7 +3,7 @@
 ## Run Tests
 
 ```
-cargo test
+cargo test -- --nocapture
 ```
 
 ## Reference and Tutorial Source
