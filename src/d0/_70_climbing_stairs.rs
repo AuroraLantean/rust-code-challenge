@@ -7,6 +7,7 @@ impl Solution {
         println!("--------== 70 climb_stairs(fold fn). n:{}", n);
         let (mut a, mut b, mut ways) = (0, 1, 0);
         // Iterate to calculate ways using Fibonacci logic.
+        #[allow(unused_variables)]
         for i in 1..=n {
             ways = a + b; // Calculate current ways.
             a = b; // Update a.
@@ -37,6 +38,7 @@ impl Solution {
 fn test70() {
     //let even_sum2 = (0..=10).filter(|n| *n % 2 == 0).sum()
     //let sum: u32 = vec![1, 2, 3, 4, 5, 6].iter().sum();
+    #[allow(unused_variables)]
     let sum: u32 = vec![1, 2, 3, 4, 5, 6]
         .iter()
         .fold(0u32, |sum, val| sum + val);
