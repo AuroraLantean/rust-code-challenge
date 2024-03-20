@@ -12,6 +12,8 @@ mod _34_find_first_and_last_position_of_elements_in_sorted_array;
 mod _35_search_insert_position;
 mod _3_longest_substring_without_repeating_characters;
 mod _53_maximum_subarray;
+mod _58_length_of_last_word;
+mod _66_plus_one;
 mod _7_reverse_integer;
 mod _8_string_to_integer;
 mod _9_palindrome_number;
