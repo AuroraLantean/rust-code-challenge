@@ -3,6 +3,7 @@ subarray with the largest sum, and return its sum.
  */
 struct Solution;
 
+#[allow(unused_mut)]
 impl Solution {
     fn max_sub_array(nums: Vec<i32>) -> i32 {
         println!("--------== 35 max_sub_array. nums:{:?}", nums);
