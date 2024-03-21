@@ -20,6 +20,8 @@ mod _70_climbing_stairs;
 mod _71_simplify_path;
 mod _75_sort_colors;
 mod _7_reverse_integer;
+mod _88_merge_sorted_array;
+mod _89_gray_code;
 mod _8_string_to_integer;
 mod _9_palindrome_number;
 mod _a1_arrays;

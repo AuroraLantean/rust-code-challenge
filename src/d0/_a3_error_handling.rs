@@ -87,7 +87,7 @@ fn get_enum_error(x: i32) -> Result<Output> {
     }
     Ok(output)
 }
-fn get_many_error(successful: bool) -> Result<()> {
+fn get_many_error(_x: i32) -> Result<()> {
     /*
     func1()
     .and_then(func2)
