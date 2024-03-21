@@ -24,3 +24,4 @@ mod _8_string_to_integer;
 mod _9_palindrome_number;
 mod _a1_arrays;
 mod _a1_vector;
+mod _a3_error_handling;

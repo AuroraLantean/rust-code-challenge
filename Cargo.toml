@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+thiserror = "1.0.58"
 anyhow = "1.0.81"
 rand = "0.8.5"
 assert_approx_eq = "1.1.0"
