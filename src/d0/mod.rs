@@ -3,6 +3,7 @@ mod list_file;
 //---------==
 mod _125_valid_palindrome;
 mod _136_single_number;
+mod _169_majority_element;
 mod _190_reverse_bits;
 mod _191_number_of_1_bits;
 mod _1_two_sum;
