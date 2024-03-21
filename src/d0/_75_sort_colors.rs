@@ -8,7 +8,7 @@ struct Solution;
 
 impl Solution {
     fn sort_colors(nums: &mut Vec<i32>) {
-        println!("--------== 75 Sort Colors. nums:{:?}", nums);
+        println!("--------== 75 Sort Colo rs. nums:{:?}", nums);
         let n = nums.len();
         let mut l = 0;
         let mut r = n - 1;

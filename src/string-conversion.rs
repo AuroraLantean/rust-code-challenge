@@ -1,27 +1,5 @@
 use std::str;
 
-fn loop_xz() {
-    println!("loop_xz");
-    let mut arr = [11, 12, 13];
-    let mut arr_out = [0, 0, 0];
-    for v in arr {
-        println!("v={}", v);
-    }
-    println!("{:?}", arr);
-    println!("{:?}", arr_out);
-
-    for v in arr.iter() {
-        println!("iter v={}", v);
-    }
-    println!("{:?}", arr);
-    println!("{:?}", arr_out);
-
-    for v in (&mut arr).into_iter() {
-        println!("into_iter v={}", v);
-    }
-    println!("{:?}", arr);
-    println!("{:?}", arr_out);
-}
 //Conversion between String, str, Vec<u8>, Vec<char>
 fn string_conversion() {
     // -- FROM: vec of chars --
