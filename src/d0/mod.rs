@@ -11,6 +11,7 @@ mod _26_remove_duplicates_from_sorted_array;
 mod _27_remove_element;
 mod _28_find_index;
 mod _2_add_two_numbers;
+mod _344_reverse_string;
 mod _34_find_first_and_last_position_of_elements_in_sorted_array;
 mod _35_search_insert_position;
 mod _3_longest_substring_without_repeating_characters;

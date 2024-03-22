@@ -1,5 +1,7 @@
 # rust-code-challenge
 
+https://leetcode.com/problems/happy-number/
+
 ## Run Tests
 
 To run all tests:
