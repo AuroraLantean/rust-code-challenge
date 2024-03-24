@@ -26,7 +26,8 @@ fn vector_sum(vetr: Vec<i32>) -> i32 {
     let sum = vetr.iter().sum();
     sum
 }
-pub struct Box {
+pub struct Box<'a> {
+    name: &'a str,
     val: i32,
 }
 fn sum_struct_vec(vetr: Vec<Box>) -> i32 {
@@ -47,9 +48,9 @@ fn testa2() {
     let vetr: Vec<i32> = vec![1, 2, 3, 4, 5];
     assert_eq!(vector_sum(vetr), 15);
 
-    let var0 = Box { val: 0 };
-    let var1 = Box { val: 1 };
-    let var2 = Box { val: 2 };
+    let var0 = Box { name: "Aa", val: 0 };
+    let var1 = Box { name: "Ab", val: 1 };
+    let var2 = Box { name: "Ac", val: 2 };
     let vetr = vec![var0, var1, var2];
     assert_eq!(sum_struct_vec(vetr), 3);
 }
