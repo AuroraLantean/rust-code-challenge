@@ -18,7 +18,25 @@ fn array_fn(mut arr: [i32; 5]) -> i32 {
     }
     0
 }
+fn array_sum(arr: [i32; 5]) -> i32 {
+    println!("--------== a1 array_sum arr= {:?}", arr);
+    let sum = arr.iter().sum();
+    sum
+}
+pub struct Box {
+    val: i32,
+}
 
+fn sum_struct_array() {
+    let var0 = Box { val: 0 };
+    let var1 = Box { val: 1 };
+    let var2 = Box { val: 2 };
+    let array = [var0, var1, var2];
+    let sum = array.iter().map(|var| var.val).sum::<i32>();
+    println!("sum_struct_array: sum = {:?}", sum);
+    //let sum = array.into_iter().map (|var| var.val).reduce(|x, y| x + y);
+    //let sum: i32 = vals.into_iter().fold(0, |acc, Box {val}| acc + val);
+}
 //loop over struct fields
 use struct_iterable::Iterable;
 #[derive(Iterable)]
@@ -48,10 +66,15 @@ fn testa1() {
     let arr = [11, 12, 13, 14, 15];
     assert_eq!(array_fn(arr), 0);
 
+    let arr = [1, 2, 3, 4, 5];
+    assert_eq!(array_sum(arr), 15);
+
     let instance = MyStruct {
         field1: 42,
         field2: "Hello, world!".to_string(),
         field3: Some("Hello, world!".to_string()),
     };
     struct_fn(&instance);
+
+    sum_struct_array();
 }

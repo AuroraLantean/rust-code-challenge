@@ -9,6 +9,7 @@ mod _191_number_of_1_bits;
 mod _1_two_sum;
 mod _217_contains_duplicate;
 mod _242_valid_anagram;
+mod _258_add_digits;
 mod _268_missing_number;
 mod _26_remove_duplicates_from_sorted_array;
 mod _27_remove_element;

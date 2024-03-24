@@ -21,7 +21,21 @@ fn vec_fn(mut vetr: Vec<i32>) -> i32 {
     println!("vetr: {:?}", vetr);
     0
 }
-
+fn vector_sum(vetr: Vec<i32>) -> i32 {
+    println!("--------== a2 vector_sum vetr= {:?}", vetr);
+    let sum = vetr.iter().sum();
+    sum
+}
+pub struct Box {
+    val: i32,
+}
+fn sum_struct_vec(vetr: Vec<Box>) -> i32 {
+    let sum = vetr.iter().map(|var| var.val).sum::<i32>();
+    println!("sum_struct_vec: sum = {:?}", sum);
+    //let sum = array.into_iter().map (|var| var.val).reduce(|x, y| x + y);
+    //let sum: i32 = vals.into_iter().fold(0, |acc, Var {val}| acc + val);
+    sum
+}
 #[test]
 fn testa2() {
     let mut vetr = Vec::new();
@@ -29,4 +43,13 @@ fn testa2() {
     vetr.push(1);
     vetr.push(2);
     assert_eq!(vec_fn(vetr), 0);
+
+    let vetr: Vec<i32> = vec![1, 2, 3, 4, 5];
+    assert_eq!(vector_sum(vetr), 15);
+
+    let var0 = Box { val: 0 };
+    let var1 = Box { val: 1 };
+    let var2 = Box { val: 2 };
+    let vetr = vec![var0, var1, var2];
+    assert_eq!(sum_struct_vec(vetr), 3);
 }
