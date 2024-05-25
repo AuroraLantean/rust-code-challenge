@@ -70,6 +70,32 @@ fn testa1() {
     let arr = [1, 2, 3, 4, 5];
     assert_eq!(array_sum(arr), 15);
 
+    //reverse an array
+    let m1: [i32; 5] = [1, 2, 3, 4, 5];
+    let last_one = m1.last().copied().unwrap();
+    println!("last element:{:?}", last_one);
+    assert_eq!(last_one, 5);
+    
+    let m2: Vec<i32> = m1.iter().copied().rev().collect();
+    println!("reversed array: {:?}", m2);
+    assert_eq!(vec![5, 4, 3, 2, 1], m2);
+    
+    //sort an array
+    let mut a = [5, 3, 1, 4, 2];
+    a.sort();
+    println!("sorted array: {:?}", a);
+    assert_eq!(a, [1, 2, 3, 4, 5]);
+    
+    //find the index of an element in an array, vector or slice
+    let a3 = ["one", "two", "three"];
+    let index = a3.iter().position(|&r| r == "two").unwrap();
+    println!("element index: {}", index);
+    assert_eq!(index, 1);
+    
+    //remove an element via its value, assuming the element exists
+    let mut xs = [2, 1, 2, 3, 2];
+    let some_x = 2;
+    
     let instance = MyStruct {
         field1: 42,
         field2: "Hello, world!".to_string(),

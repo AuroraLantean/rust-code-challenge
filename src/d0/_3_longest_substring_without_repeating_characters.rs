@@ -1,6 +1,5 @@
 /*Given a string s, find the length of the longest
-substring
-without repeating characters.
+substring without repeating characters.
 
 Example 1: Input: s = "abcabcbb"
 Output: 3
@@ -54,23 +53,23 @@ fn test() {
     //Solution::loop_xz()
 }
 /*
-  fn length_of_longest_substring2(s: &str) -> u32 {
-      let mut sub_str_start: usize = 0;
-      let mut longest = 0;
-      let mut map: HashMap<char, usize> = HashMap::new();
+fn length_of_longest_substring2(s: &str) -> u32 {
+    let mut sub_str_start: usize = 0;
+    let mut longest = 0;
+    let mut map: HashMap<char, usize> = HashMap::new();
 
-      for (idx, c) in s.char_indices() {
-          map.entry(c)
-              .and_modify(|old_idx| {
+    for (idx, c) in s.char_indices() {
+        map.entry(c)
+            .and_modify(|old_idx| {
                   if *old_idx >= sub_str_start {
-                      // got a repetition
-                      longest = max(longest, idx - sub_str_start);
-                      sub_str_start = *old_idx + 1;
-                  }
+                    // got a repetition
+                    longest = max(longest, idx - sub_str_start);
+                    sub_str_start = *old_idx + 1;
+                }
                   *old_idx = idx;
-              })
-              .or_insert(idx);
-      }
-      max(longest, s.len() - sub_str_start) as u32
-  }
+            })
+            .or_insert(idx);
+    }
+    max(longest, s.len() - sub_str_start) as u32
+}
 */
