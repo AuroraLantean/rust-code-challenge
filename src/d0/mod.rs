@@ -39,3 +39,4 @@ mod _a2_vector;
 mod _a3_error_handling;
 mod _a4_options;
 mod _a5_lifetime;
+mod factorial;

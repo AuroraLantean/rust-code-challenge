@@ -93,8 +93,8 @@ fn testa1() {
     assert_eq!(index, 1);
     
     //remove an element via its value, assuming the element exists
-    let mut xs = [2, 1, 2, 3, 2];
-    let some_x = 2;
+    let _xs = [2, 1, 2, 3, 2];
+    let _some_x = 2;
     
     let instance = MyStruct {
         field1: 42,
