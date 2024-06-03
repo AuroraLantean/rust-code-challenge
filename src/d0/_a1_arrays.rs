@@ -61,6 +61,12 @@ fn struct_fn(instance: &MyStruct) {
         println!("loop end: {:?}", field_value);
     }
 }
+pub fn giant_grunts(initial: char) -> String {
+    ["Bee", "Fee", "Gee", "Fi", "Hi", "Fo", "Mo", "Fum", "Tum"].iter().fold(
+        String::new(),
+        |acc, grunt| if grunt.starts_with(initial) { acc + grunt } else { acc },
+    )
+}
 
 #[test]
 fn testa1() {
@@ -104,4 +110,7 @@ fn testa1() {
     struct_fn(&instance);
 
     sum_struct_array();
+    
+    let song = giant_grunts('F');
+    println!("{song:?}");
 }
