@@ -23,20 +23,20 @@ fn array_sum(arr: [i32; 5]) -> i32 {
     let sum = arr.iter().sum();
     sum
 }
-pub struct Box<'a> {
+pub struct Item<'a> {
     name: &'a str,
     val: i32,
 }
 
 fn sum_struct_array() {
-    let var0 = Box { name: "Aa", val: 0 };
-    let var1 = Box { name: "Ab", val: 1 };
-    let var2 = Box { name: "Ac", val: 2 };
+    let var0 = Item { name: "Aa", val: 0 };
+    let var1 = Item { name: "Ab", val: 1 };
+    let var2 = Item { name: "Ac", val: 2 };
     let array = [var0, var1, var2];
     let sum = array.iter().map(|var| var.val).sum::<i32>();
     println!("sum_struct_array: sum = {:?}", sum);
     //let sum = array.into_iter().map (|var| var.val).reduce(|x, y| x + y);
-    //let sum: i32 = vals.into_iter().fold(0, |acc, Box {val}| acc + val);
+    //let sum: i32 = vals.into_iter().fold(0, |acc, Item {val}| acc + val);
 }
 //loop over struct fields
 use struct_iterable::Iterable;

@@ -41,3 +41,4 @@ mod _a4_options;
 mod _a5_lifetime;
 mod factorial;
 mod _509_fibonacci;
+mod prime_number;
