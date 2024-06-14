@@ -42,3 +42,4 @@ mod _a5_lifetime;
 mod factorial;
 mod _509_fibonacci;
 mod prime_number;
+mod quotient;
