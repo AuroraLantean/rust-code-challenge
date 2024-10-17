@@ -10,7 +10,9 @@ trait Animal {
   fn make_sound(&self) -> (); //self, because it is a instance level method that we call on each instance of a type. E.g. not all dogs bark. some dogs bark.
 }
 trait NotDangerous {}
-trait Dangerous {}
+trait Dangerous {
+  fn bite(&self) -> ();
+}
 struct Dog {}
 impl NotDangerous for Dog {}
 impl Animal for Dog {
@@ -31,14 +33,22 @@ impl Animal for Cat {
 }
 
 struct Bear {}
-impl Dangerous for Bear {}
+impl Dangerous for Bear {
+  fn bite(&self) -> () {
+    println!("Bear bited!")
+  }
+}
 impl Animal for Bear {
   fn make_sound(&self) -> () {
     println!("Bear roared!");
   }
 }
 struct Tiger {}
-impl Dangerous for Tiger {}
+impl Dangerous for Tiger {
+  fn bite(&self) -> () {
+    println!("Tiger bited!");
+  }
+}
 impl Animal for Tiger {
   fn make_sound(&self) -> () {
     println!("Tiger roared!");
@@ -56,6 +66,7 @@ pub fn make_person() {
   };
   john.pet.make_sound();
   john.exotic.make_sound();
+  john.exotic.bite();
 
   let cat: Cat = Cat {};
   let jane = Person {
@@ -65,6 +76,7 @@ pub fn make_person() {
   };
   jane.pet.make_sound();
   jane.exotic.make_sound();
+  jane.exotic.bite();
 
   /*let vlad = Person {
     first_name: "Vlad".to_string(),
