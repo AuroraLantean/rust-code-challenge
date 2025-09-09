@@ -36,6 +36,7 @@ mod _89_gray_code;
 mod _8_string_to_integer;
 mod _9_palindrome_number;
 mod _a1_arrays;
+mod _a2_vec_enum;
 mod _a2_vector;
 mod _a3_error_handling;
 mod _a4_options;
