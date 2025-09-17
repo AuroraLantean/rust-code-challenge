@@ -6,6 +6,7 @@ z*.sh
 *.sqlite
 *.tar.gz
 localhost
+justfile
 
 # Various IDEs and Editors
 .vscode/
