@@ -42,6 +42,7 @@ mod _a3_error_handling;
 mod _a4_options;
 mod _a5_lifetime;
 mod _a6_arc_hash;
+mod _a6_arc_vec_deque;
 mod factorial;
 mod generics_traits;
 mod prime_number;

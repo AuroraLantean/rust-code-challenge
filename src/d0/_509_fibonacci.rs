@@ -53,3 +53,39 @@ fn test509() {
 
   assert_eq!(even_sum(10), 30)
 }
+/*
+struct Fibonacci {
+    n: u64,
+}
+
+impl Fibonacci {
+    pub fn new(n: u64) -> Self {
+        Self { n }
+    }
+}
+
+impl Fibonacci {
+    fn fibonacci(n: u64) -> u64 {
+        match n {
+            0 => 1,
+            1 => 1,
+            _ => Self::fibonacci(n - 1) + Self::fibonacci(n - 2),
+        }
+    }
+}
+
+impl Iterator for Fibonacci {
+    type Item = u64;
+
+    fn next(&mut self) -> Option<Self::Item> {
+        let next = Some(Self::fibonacci(self.n));
+        self.n += 1;
+        next
+    }
+}
+
+let fib = Fibonacci::new(0);
+for f in fib {
+    // ...
+}
+*/
